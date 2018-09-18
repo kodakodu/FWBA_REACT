@@ -11,12 +11,12 @@ import TextField from 'material-ui/TextField';
 import Typography from 'material-ui/Typography';
 import Divider from 'material-ui/Divider';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
-
+import Layout from './Layout';
 
 class Tools extends React.Component{
     render(){
         return(
-            <div>
+            <Layout>
                 {/* <h2>Outils</h2> */}
                         <Typography type="display2" gutterBottom>
                                 Outils
@@ -44,7 +44,7 @@ class Tools extends React.Component{
                                 <a href="/doc/outils/Rédiger une User Story.pdf" target="_blank">Rédaction d’une User Story</a>
                         </Typography>
                 </div>
-            </div>
+            </Layout>
         );
     }
 }

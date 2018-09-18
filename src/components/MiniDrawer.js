@@ -19,23 +19,24 @@ import ChevronRightIcon from 'material-ui-icons/ChevronRight';
 import Paper from 'material-ui/Paper';
 
 import { mailFolderListItems } from './tileData';
-import Home from '../components/Accueil';
-import Kitacc from '../components/Kitacc';
-import Overview from '../components/Overview';
-import Deliverables from '../components/Deliverables';
-import Tools from '../components/Tools';
-import Community from '../components/Community';
-import NotFound from '../components/notFound';
-import Process1 from '../components/process/Process1';
-import Process2 from '../components/process/Process2';
-import Process3 from '../components/process/Process3';
-import Process4 from '../components/process/Process4';
-import Process5 from '../components/process/Process5';
-import Process6 from '../components/process/Process6';
-import Process7 from '../components/process/Process7';
-import Conduite_Changement from '../components/Conduite_Changement';
-import Pilotage from '../components/Pilotage';
-import Maj_Referentiel from '../components/Maj_Referentiel';
+import Home from 'components/Accueil';
+import Kitacc from 'components/Kitacc';
+import Overview from 'components/Overview';
+import Deliverables from 'components/Deliverables';
+import Tools from 'components/Tools';
+import Community from 'components/Community';
+import NotFound from 'components/notFound';
+import Process1 from 'components/process/Process1';
+import Process2 from 'components/process/Process2';
+import Process3 from 'components/process/Process3';
+import Process4 from 'components/process/Process4';
+import Process5 from 'components/process/Process5';
+import Process6 from 'components/process/Process6';
+import Process7 from 'components/process/Process7';
+import Conduite_Changement from 'components/Conduite_Changement';
+import Pilotage from 'components/Pilotage';
+import Maj_Referentiel from 'components/Maj_Referentiel';
+import { Grid } from 'material-ui';
 
 
 const drawerWidth = 240;
@@ -74,6 +75,7 @@ const styles = theme => ({
     position: 'relative',
     height: '100%',
     width: drawerWidth,
+    flex: 'inherit',
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.enteringScreen,
@@ -137,66 +139,51 @@ class MiniDrawer extends React.Component {
   };
 
   render() {
-    const { classes, theme } = this.props;
+    const { classes, theme, children } = this.props;
 
     return (
-      <Router>
-          <div className={classes.appFrame}>
-            <AppBar className={classNames(classes.appBar, this.state.open && classes.appBarShift)}>
-              <Toolbar disableGutters={!this.state.open}>
-                <IconButton
-                  color="contrast"
-                  aria-label="open drawer"
-                  onClick={this.handleDrawerOpen}
-                  className={classNames(classes.menuButton, this.state.open && classes.hide)}
-                >
-                  <MenuIcon />
-                </IconButton>
-                {/* <img src="https://webprd.mnt.fr/DSLIntegrationSiteMNT_v9/_images/headerMNT/assets/images/mnt-logo.png" width = "30" height = "30" alt="logo"/> */}
-                <Typography type="title" color="inherit" noWrap>
-                  FrameWork Gestion de projets
-                </Typography>
-              </Toolbar>
-            </AppBar>
-            <Drawer
-              type="permanent"
-              classes={{
-                paper: classNames(classes.drawerPaper, !this.state.open && classes.drawerPaperClose),
-              }}
-              open={this.state.open}
+      <div className={classes.appFrame}>
+        <AppBar className={classNames(classes.appBar, this.state.open && classes.appBarShift)}>
+          <Toolbar disableGutters={!this.state.open}>
+            <IconButton
+              color="contrast"
+              aria-label="open drawer"
+              onClick={this.handleDrawerOpen}
+              className={classNames(classes.menuButton, this.state.open && classes.hide)}
             >
-              <div className={classes.drawerInner}>
-                <div className={classes.drawerHeader}>
-                  <IconButton onClick={this.handleDrawerClose}>
-                    {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
-                  </IconButton> 
-                </div>
-                <Divider />
-                <List className={classes.list}>{mailFolderListItems}</List> 
-              </div>
-            </Drawer>
-            <Paper className={classes.stylePaper}>
-            <Route exact path="/" component={Home}/>
-                <Route path="/Home" component={Home}/>
-                <Route path="/Kitacc" component={Kitacc}/>
-                <Route path="/Overview" component={Overview}/>
-                <Route path="/Deliverables" component={Deliverables}/>
-                <Route path="/Tools" component={Tools}/>
-                <Route path="/Community" component={Community}/>
-                <Route path="/Process1" component={Process1}/>
-                <Route path="/Process2" component={Process2}/>
-                <Route path="/Process3" component={Process3}/>
-                <Route path="/Process4" component={Process4}/>
-                <Route path="/Process5" component={Process5}/>
-                <Route path="/Process6" component={Process6}/>
-                <Route path="/Process7" component={Process7}/>
-                <Route path="/Conduite_Changement" component={Conduite_Changement}/>
-                <Route path="/Pilotage" component={Pilotage}/>
-                <Route path="/Maj_Referentiel" component={Maj_Referentiel}/>
-                <Route path="/NotFound" component={NotFound}/>
-            </Paper>
+              <MenuIcon />
+            </IconButton>
+            {/* <img src="https://webprd.mnt.fr/DSLIntegrationSiteMNT_v9/_images/headerMNT/assets/images/mnt-logo.png" width = "30" height = "30" alt="logo"/> */}
+            <Typography type="title" color="inherit" noWrap>
+              FrameWork Gestion de projets
+            </Typography>
+          </Toolbar>
+        </AppBar>
+        <Drawer
+          type="permanent"
+          classes={{
+            paper: classNames(classes.drawerPaper, !this.state.open && classes.drawerPaperClose),
+          }}
+          open={this.state.open}
+        >
+          <div className={classes.drawerInner}>
+            <div className={classes.drawerHeader}>
+              <IconButton onClick={this.handleDrawerClose}>
+                {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
+              </IconButton> 
+            </div>
+            <Divider />
+            <List className={classes.list}>{mailFolderListItems}</List> 
           </div>
-      </Router>
+        </Drawer>
+        <Grid container>
+          <Grid item md={12}>
+            <Paper>
+              { children }
+            </Paper>
+          </Grid>
+        </Grid>
+      </div>
     );
   }
 }

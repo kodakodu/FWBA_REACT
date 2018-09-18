@@ -26,12 +26,13 @@ import Process7 from '../components/process/Process7';
 import Conduite_Changement from '../components/Conduite_Changement';
 import Pilotage from '../components/Pilotage';
 import Maj_Referentiel from '../components/Maj_Referentiel';
+import Layout from './Layout'
 
 class Overview extends React.Component{
     render(){
         return(
                
-            <div>
+            <Layout>
              <Router>
                         <div>
                                 <Route path="/Process1" component={Process1}/>
@@ -92,7 +93,7 @@ class Overview extends React.Component{
                 <Link to="/Process2">
                         <ListItemText primary="Fonctionnement" />
                 </Link> */}
-            </div>
+            </Layout>
         );
     }
 }

@@ -17,5 +17,5 @@ import registerServiceWorker from './registerServiceWorker';
 //    } 
 // }
 
- ReactDOM.render(<MiniDrawer />, document.getElementById('root'));
+ ReactDOM.render(<App />, document.getElementById('root'));
  registerServiceWorker();

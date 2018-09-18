@@ -11,18 +11,18 @@ import TextField from 'material-ui/TextField';
 import Typography from 'material-ui/Typography';
 import Divider from 'material-ui/Divider';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
-
+import Layout from './Layout';
 
 class Community extends React.Component{
     render(){
         return(
-            <div>
+            <Layout>
                 {/* <h2>Communauté</h2> */}
                         <Typography type="display2" gutterBottom>
                                 Communauté
                         </Typography>
                 <h1>-- En construction --</h1>
-            </div>
+            </Layout>
         );
     }
 }
