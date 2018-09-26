@@ -11,33 +11,33 @@ import TextField from 'material-ui/TextField';
 import Typography from 'material-ui/Typography';
 import Divider from 'material-ui/Divider';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
-
+import Layout from './Layout'
 import FileIcon from 'material-ui-icons/FileDownload';
 
 class Deliverables extends React.Component{
     render(){
         return(
-            <div>
-                      <Typography type="display2" gutterBottom>
+            <Layout>
+                      <Typography variant="headline" gutterBottom>
                                 Livrables
                         </Typography>
                     <div>
                         
-                         <Typography type="subheading" gutterBottom>
+                         <Typography variant="subheading" gutterBottom>
                                Etude d'opportunités
                         </Typography>
-                        <Typography type="subheading" gutterBottom>
+                        <Typography variant="subheading" gutterBottom>
                                 Etude de faisabilité
                         </Typography>
-                        <Typography type="subheading" gutterBottom>
+                        <Typography variant="subheading" gutterBottom>
                                 Plan d'analyse métier
                         </Typography>
-                        <Typography type="subheading" gutterBottom>
+                        <Typography variant="subheading" gutterBottom>
                                 Dossier d'exigences fonctionnelles
                         </Typography>
                         
                     </div>
-            </div>
+            </Layout>
         );
     }
 }

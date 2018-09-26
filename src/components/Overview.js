@@ -48,7 +48,7 @@ class Overview extends React.Component{
                         </div>
                 </Router>
                 {/* <h2>Processus projet</h2> */}
-                        <Typography type="display2" gutterBottom>
+                        <Typography variant="headline" gutterBottom>
                                 Processus projet
                         </Typography>
                 

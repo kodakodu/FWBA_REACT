@@ -18,10 +18,14 @@ class Kitacc extends React.Component{
         return(
             <Layout>
                 {/* <h2>Kit Accueil</h2> */}
-                        <Typography type="display2" gutterBottom>
-                                Kit Accueil
+                        <Typography variant="headline" gutterBottom>
+                        Pour mieux connaitre la MNT...
                         </Typography>
-                <h1>-- En construction --</h1>
+                <Typography variant="Headline">
+                Vous êtes nouvellement arrivé à la MNT et vous avez été identifié comme Partie Prenante à un projet...
+
+Pour vous aider à la découvrir, nous vous invitons à visualiser les documents suivants:
+                </Typography>
             </Layout>
         );
     }

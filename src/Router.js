@@ -27,7 +27,7 @@ const Router = () => {
     return (
         <BrowserRouter>
             <Switch>
-                <Route exact path="/" component={Home}/>
+                <Route exact path="/" component={Kitacc}/>
                 <Route path="/Home" component={Home}/>
                 <Route path="/Kitacc" component={Kitacc}/>
                 <Route path="/Overview" component={Overview}/>
@@ -44,7 +44,7 @@ const Router = () => {
                 <Route path="/Conduite_Changement" component={Conduite_Changement}/>
                 <Route path="/Pilotage" component={Pilotage}/>
                 <Route path="/Maj_Referentiel" component={Maj_Referentiel}/>
-                <Route path="/NotFound" component={NotFound}/>
+                <Route path="*" component={NotFound}/>
             </Switch>
         </BrowserRouter>
     )

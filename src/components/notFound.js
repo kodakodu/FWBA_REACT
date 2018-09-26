@@ -1,9 +1,16 @@
 import React from 'react';
+import Typography from 'material-ui/Typography';
+import Layout from './Layout'
 
 const NotFound = () =>
-  <div>
-    <h3>404 page not found</h3>
-    <p>We are sorry but the page you are looking for does not exist.</p>
-  </div>
+<Layout>
+{/* <h2>Kit Accueil</h2> */}
+        <Typography variant="headline" gutterBottom>
+        Erreur 404
+        </Typography>
+<Typography variant="Headline">
+Page introuvable !
+</Typography>
+</Layout>
 
 export default NotFound;

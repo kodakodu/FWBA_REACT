@@ -43,9 +43,12 @@ const drawerWidth = 240;
 
 const styles = theme => ({
   appFrame: {
-    width: '100%',
+    width: '99%',
     minHeight: '100%',
     display: 'flex',
+    marginTop: '75px',
+    marginLeft: '10px',
+    marginRight: '50px',
     zIndex: 1,
   },
   appBar: {
@@ -146,7 +149,7 @@ class MiniDrawer extends React.Component {
         <AppBar className={classNames(classes.appBar, this.state.open && classes.appBarShift)}>
           <Toolbar disableGutters={!this.state.open}>
             <IconButton
-              color="contrast"
+              color="inherit"
               aria-label="open drawer"
               onClick={this.handleDrawerOpen}
               className={classNames(classes.menuButton, this.state.open && classes.hide)}
@@ -154,8 +157,8 @@ class MiniDrawer extends React.Component {
               <MenuIcon />
             </IconButton>
             {/* <img src="https://webprd.mnt.fr/DSLIntegrationSiteMNT_v9/_images/headerMNT/assets/images/mnt-logo.png" width = "30" height = "30" alt="logo"/> */}
-            <Typography type="title" color="inherit" noWrap>
-              FrameWork Gestion de projets
+            <Typography variant="title" color="inherit" noWrap>
+              FRAMEWORK GESTION DE PROJETS
             </Typography>
           </Toolbar>
         </AppBar>

@@ -18,7 +18,7 @@ class Community extends React.Component{
         return(
             <Layout>
                 {/* <h2>Communauté</h2> */}
-                        <Typography type="display2" gutterBottom>
+                        <Typography variant="headline" gutterBottom>
                                 Communauté
                         </Typography>
                 <h1>-- En construction --</h1>
