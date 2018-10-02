@@ -5,11 +5,14 @@ import { withStyles } from 'material-ui/styles';
 import Drawer from 'material-ui/Drawer';
 import AppBar from 'material-ui/AppBar';
 import Toolbar from 'material-ui/Toolbar';
-import Grid from 'material-ui/Grid';
+//import Grid from 'material-ui/Grid';
+import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 import List from 'material-ui/List';
 import { MenuItem } from 'material-ui/Menu';
 import TextField from 'material-ui/TextField';
-import Typography from 'material-ui/Typography';
+import Typography from '@material-ui/core/Typography';
+//import Typography from 'material-ui/Typography';
 import Divider from 'material-ui/Divider';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 import Layout from './Layout'
@@ -33,6 +36,15 @@ class Kitacc extends React.Component{
                             </Typography>
                     </Grid>
                     <Grid item xs={2}></Grid>
+                </Grid>
+                <Grid container spacing={12}>
+                    <Grid item sm={6}><Paper style={{width:'95%', margin :'auto'}}>
+                    <Typography variant='headline' style={{textAlign: 'center'}}>Première prise de contact</Typography>
+                    
+                    </Paper></Grid>
+                    <Grid item sm={6}><Paper style={{width:'95%', margin : 'auto'}}>
+                    <Typography variant='headline' style={{textAlign: 'center'}}>Organisation géographique</Typography>
+                    </Paper></Grid>
                 </Grid>
             </Layout>
         );
