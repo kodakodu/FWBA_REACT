@@ -22,7 +22,7 @@ class Deliverables extends React.Component{
                       <Typography variant="headline" gutterBottom>
                                 Livrables
                         </Typography>
-                    <div>
+                    <div style={{margin: '0,auto'}}>
                         
                          <Typography variant="subheading" gutterBottom>
                                Etude d'opportunités
