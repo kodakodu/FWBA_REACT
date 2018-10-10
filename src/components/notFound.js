@@ -1,5 +1,5 @@
 import React from 'react';
-import Typography from 'material-ui/Typography';
+//import Typography from 'material-ui/Typography';
 import Grid from 'material-ui/Grid';
 import Layout from './Layout'
 
@@ -12,7 +12,7 @@ const NotFound = () =>
                         {/* <Typography variant="headline" gutterBottom style={{textAlign:'center'}}>
                         Erreur 404...
                         </Typography> */}
-                        <img src='img/404-page.png'></img>                           
+                        <img src='img/404-page.png' alt="404"></img>                           
                 </Grid>
                 <Grid item xs={2}></Grid>
         </Grid>

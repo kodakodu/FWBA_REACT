@@ -19,23 +19,6 @@ import ChevronRightIcon from 'material-ui-icons/ChevronRight';
 import Paper from 'material-ui/Paper';
 
 import { mailFolderListItems } from './tileData';
-import Home from 'components/Accueil';
-import Kitacc from 'components/Kitacc';
-import Overview from 'components/Overview';
-import Deliverables from 'components/Deliverables';
-import Tools from 'components/Tools';
-import Community from 'components/Community';
-import NotFound from 'components/notFound';
-import Process1 from 'components/process/Process1';
-import Process2 from 'components/process/Process2';
-import Process3 from 'components/process/Process3';
-import Process4 from 'components/process/Process4';
-import Process5 from 'components/process/Process5';
-import Process6 from 'components/process/Process6';
-import Process7 from 'components/process/Process7';
-import Conduite_Changement from 'components/Conduite_Changement';
-import Pilotage from 'components/Pilotage';
-import Maj_Referentiel from 'components/Maj_Referentiel';
 import { Grid } from 'material-ui';
 
 

@@ -1,12 +1,5 @@
 import React from 'react';
 import { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
-import InboxIcon from 'material-ui-icons/MoveToInbox';
-import StarIcon from 'material-ui-icons/Star';
-import ExploreIcon from 'material-ui-icons/Explore';
-import WorkIcon from 'material-ui-icons/Work';
-import QuestionIcon from 'material-ui-icons/QuestionAnswer';
-import ToolIcon from 'material-ui-icons/Build';
-import AttachmentIcon from 'material-ui-icons/Attachment';
 
 import {
   Link
@@ -28,7 +21,7 @@ export const mailFolderListItems = (
       <Link style={linkStyle} to="/Kitacc">
         <ListItem button>
           <ListItemIcon>
-            <img src='/img/ico/kit.png'/>
+            <img src='/img/ico/kit.png' alt="Accueil"/>
           </ListItemIcon>
           <ListItemText primary="Kit d'accueil" />
         </ListItem>
@@ -36,7 +29,7 @@ export const mailFolderListItems = (
       <Link style={linkStyle} to="/Overview">
         <ListItem button>
           <ListItemIcon>
-            <img src='/img/ico/processus.png'/>
+            <img src='/img/ico/processus.png' alt="Liste des projets"/>
           </ListItemIcon>
           <ListItemText primary="Liste des projets" />
         </ListItem>
@@ -44,7 +37,7 @@ export const mailFolderListItems = (
       <Link style={linkStyle} to="/Overview">
         <ListItem button>
           <ListItemIcon>
-            <img src='/img/ico/processus.png'/>
+            <img src='/img/ico/processus.png' alt="Processus projet"/>
           </ListItemIcon>
           <ListItemText primary="Processus projet" />
         </ListItem>
@@ -52,7 +45,7 @@ export const mailFolderListItems = (
       <Link style={linkStyle} to="/Deliverables">
         <ListItem button>
           <ListItemIcon>
-            <img src='/img/ico/livrables.png'/>
+            <img src='/img/ico/livrables.png' alt="Livrables"/>
           </ListItemIcon>
           <ListItemText primary="Livrables" />
         </ListItem>
@@ -60,7 +53,7 @@ export const mailFolderListItems = (
       <Link style={linkStyle} to="/Tools">
         <ListItem button>
           <ListItemIcon>
-            <img src='/img/ico/outils.png'/>
+            <img src='/img/ico/outils.png' alt="Outils"/>
           </ListItemIcon>
           <ListItemText primary="Outils" />
         </ListItem>
@@ -68,7 +61,7 @@ export const mailFolderListItems = (
       <Link style={linkStyle} to="/Community">
         <ListItem button>
           <ListItemIcon>
-            <img src='/img/ico/communaute.png'/>
+            <img src='/img/ico/communaute.png'alt="Communauté"/>
           </ListItemIcon>
           <ListItemText primary="Communauté" />
         </ListItem>

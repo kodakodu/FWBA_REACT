@@ -1,20 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-import { withStyles } from 'material-ui/styles';
-import Drawer from 'material-ui/Drawer';
-import AppBar from 'material-ui/AppBar';
-import Toolbar from 'material-ui/Toolbar';
-import List from 'material-ui/List';
-import { MenuItem } from 'material-ui/Menu';
-import TextField from 'material-ui/TextField';
 import Typography from '@material-ui/core/Typography';
-//import Typography from 'material-ui/Typography';
-import Divider from 'material-ui/Divider';
-import { mailFolderListItems, otherMailFolderListItems } from './tileData';
-import ExploreIcon from 'material-ui-icons/Explore';
-
-import { ListItem, ListItemIcon, ListItemText } from 'material-ui/List';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Process1 from '../components/process/Process1';
