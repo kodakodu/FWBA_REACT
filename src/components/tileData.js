@@ -28,7 +28,7 @@ export const mailFolderListItems = (
       <Link style={linkStyle} to="/Kitacc">
         <ListItem button>
           <ListItemIcon>
-            <WorkIcon />
+            <img src='/img/ico/kit.png'/>
           </ListItemIcon>
           <ListItemText primary="Kit d'accueil" />
         </ListItem>
@@ -36,7 +36,15 @@ export const mailFolderListItems = (
       <Link style={linkStyle} to="/Overview">
         <ListItem button>
           <ListItemIcon>
-            <ExploreIcon />
+            <img src='/img/ico/processus.png'/>
+          </ListItemIcon>
+          <ListItemText primary="Liste des projets" />
+        </ListItem>
+      </Link>
+      <Link style={linkStyle} to="/Overview">
+        <ListItem button>
+          <ListItemIcon>
+            <img src='/img/ico/processus.png'/>
           </ListItemIcon>
           <ListItemText primary="Processus projet" />
         </ListItem>
@@ -44,7 +52,7 @@ export const mailFolderListItems = (
       <Link style={linkStyle} to="/Deliverables">
         <ListItem button>
           <ListItemIcon>
-            <AttachmentIcon />
+            <img src='/img/ico/livrables.png'/>
           </ListItemIcon>
           <ListItemText primary="Livrables" />
         </ListItem>
@@ -52,7 +60,7 @@ export const mailFolderListItems = (
       <Link style={linkStyle} to="/Tools">
         <ListItem button>
           <ListItemIcon>
-            <ToolIcon />
+            <img src='/img/ico/outils.png'/>
           </ListItemIcon>
           <ListItemText primary="Outils" />
         </ListItem>
@@ -60,7 +68,7 @@ export const mailFolderListItems = (
       <Link style={linkStyle} to="/Community">
         <ListItem button>
           <ListItemIcon>
-            <QuestionIcon />
+            <img src='/img/ico/communaute.png'/>
           </ListItemIcon>
           <ListItemText primary="Communauté" />
         </ListItem>
