@@ -12,6 +12,7 @@ import Deliverables from 'components/Deliverables';
 import Tools from 'components/Tools';
 import Community from 'components/Community';
 import NotFound from 'components/notFound';
+import Projects from 'components/Projects';
 import Process1 from 'components/process/Process1';
 import Process2 from 'components/process/Process2';
 import Process3 from 'components/process/Process3';
@@ -34,6 +35,7 @@ const Router = () => {
                 <Route path="/Deliverables" component={Deliverables}/>
                 <Route path="/Tools" component={Tools}/>
                 <Route path="/Community" component={Community}/>
+                <Route path="/Projects" component={Projects}/>
                 <Route path="/Process1" component={Process1}/>
                 <Route path="/Process2" component={Process2}/>
                 <Route path="/Process3" component={Process3}/>

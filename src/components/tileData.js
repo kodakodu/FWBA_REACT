@@ -26,10 +26,10 @@ export const mailFolderListItems = (
           <ListItemText primary="Kit d'accueil" />
         </ListItem>
       </Link>
-      <Link style={linkStyle} to="/Overview">
+      <Link style={linkStyle} to="/Projects">
         <ListItem button>
           <ListItemIcon>
-            <img src='/img/ico/processus.png' alt="Liste des projets"/>
+            <img src='/img/ico/projets.png' alt="Liste des projets"/>
           </ListItemIcon>
           <ListItemText primary="Liste des projets" />
         </ListItem>

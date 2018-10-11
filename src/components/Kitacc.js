@@ -188,7 +188,7 @@ class Kitacc extends React.Component{
                 {/* ========= Dossier de presse =========*/}
                     <Grid item sm={6}>
                         <Paper style={{width:'95%', margin :'auto'}}>
-                            <Typography variant='headline' style={{textAlign: 'center'}}>
+                            <Typography variant='headline' style={{textAlign: 'center'}}>l
                                 Dossier de presse
                             </Typography>
                             <Typography variant="subheading" gutterBottom style={{marginLeft: '50px', marginBottom: '20px', paddingBottom: '10px'}}>
