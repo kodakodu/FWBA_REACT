@@ -15,13 +15,14 @@ const {projet} = props;
         <Card className="Projet">
             <CardActionArea className="CardAction">
             <CardContent>
-                <img src="/img/projet_img.png"/>
-                <Typography variant="headline">projet.titre</Typography>
+                <img src="/img/projet_img.png" className="img_projet"/>
+                <Typography variant="headline" className="titre_projet">{projet.titre}</Typography>
+                <div>
+                    <div className="txt_description"><Typography variant="body2">{projet.description}</Typography></div>
+                    <div className="img_description"><img src="/img/ico/type_cyclev.png"></img></div>
+                </div>
             </CardContent>
             </CardActionArea>
-            {/* <CardActions>
-                <Button  color="primary" className="but" size="small">Ouvrir</Button>                
-            </CardActions> */}
         </Card>
         
 

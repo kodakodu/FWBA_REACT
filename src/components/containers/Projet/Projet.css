@@ -13,3 +13,18 @@
     width: 100%;
     color: blanchedalmond;
 }
+
+.titre_projet{
+    float: left;
+    width: 100%;
+    padding: 10px;
+}
+
+.txt_description{
+    float:left;
+
+}
+
+.img_description{
+    float:right;
+}

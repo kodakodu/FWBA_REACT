@@ -7,9 +7,9 @@ import Projet from './containers/Projet/Projet';
 class Projects extends React.Component{
     state={
         projets:[
-            {projetid:1,titre:'Projet 1'},
-            {projetid:2,titre:'Projet 2'},
-            {projetid:3,titre:'Projet 3'}
+            {projetid:1,titre:'Projet 1',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
+            {projetid:2,titre:'Projet 2',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
+            {projetid:3,titre:'Projet 3',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."}
         ]
     }
 
@@ -26,7 +26,7 @@ class Projects extends React.Component{
                     <Grid item xs={2}></Grid>
                 </Grid>
                 {this.state.projets.map(projet =>{
-                    return <Projet key={projet.projetid}/>
+                    return <Projet key={projet.projetid} projet={projet}/>
                 })
             }
                         {/* <Projet/>
