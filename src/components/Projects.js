@@ -3,20 +3,36 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Layout from './Layout';
 import Projet from './containers/Projet/Projet';
+import Axios from "axios";
+
 
 class Projects extends React.Component{
     state={
-        projets:[
-            {projetid:1,titre:'Projet 1',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
-            {projetid:2,titre:'Projet 2',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
-            {projetid:3,titre:'Projet 3',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."}
-        ]
+        projets:[{}]
+        // projets:[
+        //     {projetid:1,titre:'Projet 1',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
+        //     {projetid:2,titre:'Projet 2',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
+        //     {projetid:3,titre:'Projet 3',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."}
+        // ]
+    }
+
+getProjects = () =>{
+    console.log("recuperation des projets");
+    Axios.get("http://localhost:5000/api/all_projects")
+    .then(response =>{
+        const projets = response.data;
+        this.setState({projets});
+    })
+}
+
+    componentDidMount(){
+        this.getProjects();
     }
 
     render(){
         return(
             <Layout>
-                    <Grid container spacing={12}>
+                <Grid container spacing={12}>
                     <Grid item xs={2}></Grid>
                     <Grid item xs={8}>
                             <Typography variant="headline" gutterBottom style={{textAlign:'center'}}>
