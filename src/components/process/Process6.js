@@ -6,10 +6,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from 'material-ui/styles';
 
-import ExpansionPanel, {
-  ExpansionPanelDetails,
-  ExpansionPanelSummary,
-} from 'material-ui/ExpansionPanel';
+// import ExpansionPanel, {
+//   ExpansionPanelDetails,
+//   ExpansionPanelSummary,
+// } from 'material-ui/ExpansionPanel';
 
 const styles = theme => ({
   root: {
@@ -41,7 +41,7 @@ class Process6 extends React.Component{
   };
     render(){
         const { classes } = this.props;
-        const { expanded } = this.state;
+        //const { expanded } = this.state;
         return(
             <div>
                 <h2>Homologation du projet</h2>

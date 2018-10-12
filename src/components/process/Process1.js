@@ -79,8 +79,8 @@ class Process1 extends React.Component{
                 {/* <h3>Parties prenantes et leurs rôles</h3> */}
                 <h3>Techniques</h3>
                 <dl>
-                    <dt><a href="http://www.toollity.com/index.php/2016/04/21/conduire-une-interview/" target="_blank">Conduire une interview</a></dt>
-                    <dt><a href="http://www.toollity.com/index.php/2016/05/11/le-brainstorming/" target="_blank">Le Brainstorming</a></dt>
+                    <dt><a href="http://www.toollity.com/index.php/2016/04/21/conduire-une-interview/" target="_blank" rel="noopener noreferrer" >Conduire une interview</a></dt>
+                    <dt><a href="http://www.toollity.com/index.php/2016/05/11/le-brainstorming/" target="_blank" rel="noopener noreferrer" >Le Brainstorming</a></dt>
                     <dt>Modéliser un processus</dt>
                     <dt><a href="doc/BABOK_Guide_v3_Member.pdf" target="_blank">Lien vers le BABOK</a></dt>
                 </dl>

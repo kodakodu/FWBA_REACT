@@ -6,11 +6,11 @@ import {
 } from 'react-router-dom';
 
 
-var styles = {
-  marginLeft:'5px',
-  marginTop:'5px',
-  color:'black'
-}
+// var styles = {
+//   marginLeft:'5px',
+//   marginTop:'5px',
+//   color:'black'
+// }
 
 const linkStyle = {
   textDecoration: 'none'

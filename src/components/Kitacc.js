@@ -87,7 +87,7 @@ class Kitacc extends React.Component{
                                 Organigramme
                             </Typography>
                             <Typography variant="subheading" gutterBottom style={{marginLeft: '50px', marginBottom: '20px', paddingBottom: '10px'}}>
-                                        <a href="https://mntprod.sharepoint.com/sites/Intranet/consultation/HTML/accueil.aspx#/ORGA" target="_blank" rel="noopener">Organigramme</a>
+                                        <a href="https://mntprod.sharepoint.com/sites/Intranet/consultation/HTML/accueil.aspx#/ORGA" target="_blank" rel="noopener noreferrer">Organigramme</a>
                             </Typography>
                             <Typography variant="subheading" gutterBottom style={{marginLeft: '50px', marginBottom: '20px', paddingBottom: '10px'}}>
                                         <a href="https://mntprod.sharepoint.com/:b:/r/sites/Intranet/connaitre_la_MNT/_layouts/15/WopiFrame.aspx?sourcedoc=%7B42beac03-adc1-4a62-83a5-ec08a0c60e0b%7D&action=interactivepreview" target="_blank" rel="noopener noreferrer">Communication nouvelle organisation MNT_juillet_2018</a>
@@ -165,7 +165,7 @@ class Kitacc extends React.Component{
                                 Groupe VVY
                             </Typography>
                             <Typography variant="subheading" gutterBottom style={{marginLeft: '50px', marginBottom: '20px', paddingBottom: '10px'}}>
-                                        <a href="https://www.groupe-vyv.fr/" target="_blank">Lien sur le site "https://www.groupe-vyv.fr"</a>
+                                        <a href="https://www.groupe-vyv.fr/" target="_blank" rel="noopener noreferrer">Lien sur le site "https://www.groupe-vyv.fr"</a>
                             </Typography>
                             <Typography variant="subheading" gutterBottom style={{marginLeft: '50px', marginBottom: '20px', paddingBottom: '10px'}}>
                                         <a href="https://mntprod.sharepoint.com/sites/Intranet/BA/Documents%20partages/KIT%20BA/BA0-Prise%20de%20contact%20contexte%20MNT/Autres%20Documents/La%20marque%20VYV.pdf" target="_blank" rel="noopener noreferrer">La marque VYV</a>

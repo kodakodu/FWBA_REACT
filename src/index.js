@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 // import Drawer from './components/Drawer';
-import Appbar from './components/Appbar';
-import MiniDrawer from './components/MiniDrawer';
+//import Appbar from './components/Appbar';
+//import MiniDrawer from './components/MiniDrawer';
 import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
