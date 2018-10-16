@@ -7,9 +7,9 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 //import Button from "@material-ui/core/Button";
 import Typography from '@material-ui/core/Typography';
-import "./Projet_detail.css"
+import "./Project_detail.css"
 
-const Projet_detail = (props) => {
+const Project_detail = (props) => {
 const {projet} = props;
     return(
     <Layout>
@@ -25,10 +25,10 @@ const {projet} = props;
             </CardContent>
             </CardActionArea>
         </Card> */}
-        <div className="img_description"><img src="/img/NewCyclev.png" alt="img_cyclev"></img></div>
+        <div className="img_cyclev"><img src="/img/NewCyclev.png" alt="img_cyclev"></img></div>
 
     </Layout>
 )
 }
 
-export default Projet_detail;
+export default Project_detail;

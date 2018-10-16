@@ -6,7 +6,7 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 //import Button from "@material-ui/core/Button";
 import Typography from '@material-ui/core/Typography';
-import "./Projet.css"
+import "./Project.css"
 
 const Projet = (props) => {
 const {projet} = props;

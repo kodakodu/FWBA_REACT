@@ -1,9 +1,16 @@
-import React from 'react';
-import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
+import React, { Component } from 'react';
+//import Typography from '@material-ui/core/Typography';
+//import Grid from '@material-ui/core/Grid';
 import Layout from './Layout';
-import Projet from './containers/Projet/Projet';
+//import Project from './containers/Projet/Project';
+import Projects_list from './Projects_list';
+import Router from '../Router'
 import Axios from "axios";
+
+import { NavLink, HashRouter} from "react-router-dom";
+
+
+//import "./Project.css"
 
 
 class Projects extends React.Component{
@@ -32,24 +39,13 @@ getProjects = () =>{
     render(){
         return(
             <Layout>
-                <Grid container spacing={12}>
-                    <Grid item xs={2}></Grid>
-                    <Grid item xs={8}>
-                            <Typography variant="headline" gutterBottom style={{textAlign:'center'}}>
-                                Projets en cours
-                            </Typography>                            
-                    </Grid>
-                    <Grid item xs={2}></Grid>
-                </Grid>
-                {this.state.projets.map(projet =>{
-                    return <Projet key={projet.projetid} projet={projet}/>
-                })
-            }
-                        {/* <Projet/>
-                        <Projet/>
-                        <Projet/>
-                <h1>-- En construction --</h1> */}
+                <Projects_list projects={this.state.projets} />
+                {/* <HashRouter>
+                    <NavLink to= "/Projects_list" projects={this.state.projets}>qsdqds</NavLink>
+                </HashRouter> */}
+                
             </Layout>
+            
         );
     }
 }

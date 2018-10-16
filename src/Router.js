@@ -13,6 +13,7 @@ import Tools from 'components/Tools';
 import Community from 'components/Community';
 import NotFound from 'components/notFound';
 import Projects from 'components/Projects';
+import Projects_list from 'components/Projects_list';
 import Process1 from 'components/process/Process1';
 import Process2 from 'components/process/Process2';
 import Process3 from 'components/process/Process3';
@@ -20,7 +21,8 @@ import Process4 from 'components/process/Process4';
 import Process5 from 'components/process/Process5';
 import Process6 from 'components/process/Process6';
 import Process7 from 'components/process/Process7';
-import Projet_detail from 'components/containers/Projet/Projet_detail';
+import Project from 'components/containers/Projet/Project';
+import Project_detail from 'components/containers/Projet/Project_detail';
 import Conduite_Changement from 'components/Conduite_Changement';
 import Pilotage from 'components/Pilotage';
 import Maj_Referentiel from 'components/Maj_Referentiel';
@@ -37,8 +39,9 @@ const Router = () => {
                 <Route path="/Tools" component={Tools}/>
                 <Route path="/Community" component={Community}/>
                 <Route path="/Projects" component={Projects}/>
-                <Route path="/Projet_detail" component={Projet_detail}/>
-                
+                <Route path="/Project_detail" component={Project_detail}/>
+                <Route exact path="Projects_list" component={Projects_list}/>
+                <Route path="Project" component={Project}/>
                 <Route path="/Process1" component={Process1}/>
                 <Route path="/Process2" component={Process2}/>
                 <Route path="/Process3" component={Process3}/>
