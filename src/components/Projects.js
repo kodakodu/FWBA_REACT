@@ -17,9 +17,9 @@ class Projects extends React.Component{
     state={
         projets:[{}],
          projets:[
-             {projetid:1,titre:'Projet 1',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
-             {projetid:2,titre:'Projet 2',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
-             {projetid:3,titre:'Projet 3',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."}
+             {projetid:1,titre:'Projet 1 depuis JSON',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
+             {projetid:2,titre:'Projet 2 depuis JSON',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
+             {projetid:3,titre:'Projet 3 depuis JSON',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."}
          ]
     }
 

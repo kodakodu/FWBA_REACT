@@ -7,14 +7,12 @@ const NotFound = () =>
 <Layout>
 {/* <h2>Kit Accueil</h2> */}
         <Grid container spacing={12}>
-                <Grid item xs={2}></Grid>
-                <Grid item xs={8}>
-                        {/* <Typography variant="headline" gutterBottom style={{textAlign:'center'}}>
-                        Erreur 404...
-                        </Typography> */}
-                        <img src='img/404-page.png' alt="404"></img>                           
+                <Grid item xs={4}></Grid>
+                <Grid item xs={4}>
+
+                        <img src='img/404-page.png' alt="404" style={{justifyContent: 'center', alignItems:'center'}}></img>                           
                 </Grid>
-                <Grid item xs={2}></Grid>
+                <Grid item xs={4}></Grid>
         </Grid>
 </Layout>
 
