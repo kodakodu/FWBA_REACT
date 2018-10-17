@@ -15,21 +15,21 @@ import { NavLink, HashRouter} from "react-router-dom";
 
 class Projects extends React.Component{
     state={
-        projets:[{}]
-        // projets:[
-        //     {projetid:1,titre:'Projet 1',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
-        //     {projetid:2,titre:'Projet 2',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
-        //     {projetid:3,titre:'Projet 3',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."}
-        // ]
+        projets:[{}],
+         projets:[
+             {projetid:1,titre:'Projet 1',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
+             {projetid:2,titre:'Projet 2',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."},
+             {projetid:3,titre:'Projet 3',description:"Lorem ipsum dolor sit amet. Qui optio praesentium sed magni rerum eum illo asperiores vel velit totam est cupiditate totam At dolorum perferendis."}
+         ]
     }
 
 getProjects = () =>{
     console.log("recuperation des projets");
-    Axios.get("http://localhost:5000/api/all_projects")
-    .then(response =>{
-        const projets = response.data;
-        this.setState({projets});
-    })
+    // Axios.get("http://localhost:5000/api/all_projects")
+    // .then(response =>{
+    //     const projets = response.data;
+    //     this.setState({projets});
+    // })
 }
 
     componentDidMount(){
