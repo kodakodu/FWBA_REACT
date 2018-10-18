@@ -5,12 +5,12 @@ import Grid from '@material-ui/core/Grid';
 import Project from './containers/Projet/Project';
 
 
-class Projects_list extends Component {
+class ProjectsList extends Component {
     render(){
         //const projets = props.projets;
         return(
             <div>
-                    <Grid container spacing={12}>
+                    <Grid container spacing={16}>
                     <Grid item xs={2}></Grid>
                     <Grid item xs={8}>
                             <Typography variant="headline" gutterBottom style={{textAlign:'center'}}>
@@ -20,7 +20,7 @@ class Projects_list extends Component {
                     <Grid item xs={2}></Grid>
                 </Grid>
                 {this.props.projects.map(projet =>{
-                    return <Project key={projet.projetid} projet={projet}/>
+                    return <Project key={projet.projets_id} projet={projet}/>
                 })
             }
             </div>
@@ -28,4 +28,4 @@ class Projects_list extends Component {
     }
 }
 
-export default Projects_list;
+export default ProjectsList;
