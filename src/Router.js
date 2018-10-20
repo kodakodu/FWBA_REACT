@@ -13,6 +13,7 @@ import Tools from 'components/Tools';
 import Community from 'components/Community';
 import NotFound from 'components/notFound';
 import Projects from 'components/Projects';
+import Programs from 'components/Programs/Programs';
 import ProjectsList from 'components/ProjectsList';
 import Process1 from 'components/process/Process1';
 import Process2 from 'components/process/Process2';
@@ -42,6 +43,7 @@ const Router = () => {
                 <Route path="/ProjectDetail" component={ProjectDetail}/>
                 <Route exact path="ProjectsList" component={ProjectsList}/>
                 <Route path="Project" component={Project}/>
+                <Route path="/Programs" component={Programs}/>
                 <Route path="/Process1" component={Process1}/>
                 <Route path="/Process2" component={Process2}/>
                 <Route path="/Process3" component={Process3}/>
