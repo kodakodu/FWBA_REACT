@@ -14,6 +14,9 @@ class Tools extends React.Component{
                             <Typography variant="headline" gutterBottom style={{textAlign:'center'}}>
                                 Outils
                             </Typography>
+                            <div style={{margin: '0,auto'}}>
+                            <iframe src="https://www.youtube.com/embed/vis8cWMm_ww?rel=0" allow="autoplay; encrypted-media" width="560" height="315" frameborder="0"></iframe>
+                            </div>
 
                             <div style={{margin: '0,auto'}}>
                                 <Typography variant="body2" gutterBottom style={{textAlign:'center'}}>
@@ -29,13 +32,13 @@ class Tools extends React.Component{
                                         <a href="https://mntprod.sharepoint.com/sites/Intranet/BA/Documents%20partages/KIT%20BA/Techniques%20et%20Outils/MNT%20Workshop%20Brainstorming.pdf" target="_blank" rel="noopener noreferrer" >Brainstorming</a>
                                 </Typography>
                                 <Typography variant="body2" gutterBottom style={{textAlign:'center'}}>
-                                        <a href="/doc/outils/20171106-MNT-Workshop BA-Ishikawa Cause effet.pdf" target="_blank" rel="noopener noreferrer">Diagrame Ishikawa -Causes Effets</a>
+                                        <a href="https://mntprod.sharepoint.com/:b:/s/Intranet/BA/EU06bjUuPeJNoMsrt2aRuYEBMvj7U0l07hBFMYG4-3Bdjg" target="_blank" rel="noopener noreferrer">Diagrame Ishikawa -Causes Effets</a>
                                 </Typography>
                                 <Typography variant="body2" gutterBottom style={{textAlign:'center'}}>
-                                        <a href="/doc/outils/20171113-MNT-BPMN.pdf" target="_blank" rel="noopener noreferrer">Modélisation BPMN</a>
+                                        <a href="https://mntprod.sharepoint.com/:b:/s/Intranet/BA/EcJ7ECrSapJHnLt7Q9viCpkBpRsi4brdHo82545PGmOMYA" target="_blank" rel="noopener noreferrer">Modélisation BPMN</a>
                                 </Typography>
                                 <Typography variant="body2" gutterBottom style={{textAlign:'center'}}>
-                                        <a href="/doc/outils/Rédiger une User Story.pdf" target="_blank" rel="noopener noreferrer">Rédaction d’une User Story</a>
+                                        <a href="https://mntprod.sharepoint.com/:b:/s/Intranet/BA/ETVF9VQasutMkdDLROExz1QB6uJYp40SNI1vFrIClPVDBA" target="_blank" rel="noopener noreferrer">Rédaction d’une User Story</a>
                                 </Typography>
                             </div>                            
                     </Grid>
